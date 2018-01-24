@@ -1,0 +1,350 @@
+/* app css stylesheet */
+.a-m-r-8 {
+  margin-right: 8px;
+  display: table-caption;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.ng-scope {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main {
+  width: 100%;
+  margin-top: 10%;
+  display: block;
+}
+
+.main .left-side {
+  width: 50%;
+  height: 100%;
+  float: left;  
+}
+
+ .left-side .radio-group {
+  margin: auto;
+  display: table;
+ }
+
+ .content {
+  margin-top: 15px;
+  text-align: center;
+ }
+ 
+.main .right-side {
+  width: 50%;
+  float: left;
+  height: 100%; 
+}
+
+
+.iframe {
+  height: 536px;
+  width: 516px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  min-width: 100px;
+  min-height: 50px;
+}
+
+.card {
+  width: 496px;
+  height: 506px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(229, 230, 233) rgb(223, 224, 228) rgb(208, 209, 213);
+  border-radius: 3px;
+}
+
+.card-body {
+  width: calc( 100% - 24px);
+  height: calc( 100% - 70px);
+  padding: 12px 12px 0px;
+  display: grid;
+}
+
+.carousel-card {
+  width: calc(100% - 200px)!important;
+  height: calc( 100% - 60px)!important;
+}
+
+.card-footer {
+  width: calc( 100% - 24px);
+  height: 59px;
+}
+
+  .card-body .header {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 11px;
+  }
+
+    .card-body .header .log-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+
+    .page-like-button {
+      background-position: 0 -21px;
+      font-size: 12px;
+      line-height: 22px;
+      right: 0px;
+      position: absolute;
+    }
+
+    .first-title {
+      height: 19px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.38;
+      overflow: hidden;
+      color: #3b5998;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .sponsored {
+      height: 14px;
+      color: #9197a3;
+      font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+      font-size: 11px;
+    }
+
+    .message {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.38;
+      overflow: hidden;
+    }
+
+    .message > p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .image-body {
+      width: 100%;
+      height: 343px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 1px 4px rgba(0, 0, 0, .1);
+      position: relative;
+    }
+
+    .image {
+      width: calc(100% - 2px);
+      height: 246px; 
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      margin: auto;
+      position: relative;
+      display: block;
+      max-height: 470px; 
+      overflow: hidden; 
+      background-color: rgb(255, 255, 255);
+    }
+
+    .image > img {
+      height: auto; 
+      width: 100%; 
+      min-height: 0px; 
+      position: relative; 
+      top: 0px;
+    }
+
+    .image > video {
+      height: auto; 
+      width: 100%; 
+      min-height: 0px; 
+      position: relative; 
+      top: 0px;
+    }
+
+    .play-button {
+      background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/G3f_wavBZgb.png);
+      background-repeat: no-repeat;
+      background-size: 70px 344px;
+      background-position: 0 0px;
+      cursor: pointer;
+      height: 72px;
+      left: 50%;
+      margin: -36px 0 0 -36px;
+      position: absolute;
+      top: 50%;
+      width: 72px;
+      z-index: 2;
+      border-radius: 50%;
+    }
+
+    .play-button > input {
+      display: none;
+      height: 0;
+      opacity: 0;
+    }
+
+    .head-line {
+      height: 77px;
+      margin: 10px 12px;
+    }
+
+    .head-line .head-title {
+      font-family: Georgia, 'lucida grande',tahoma,verdana,arial,sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 5px;
+      max-height: 110px;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+
+    .head-line .head-description {
+      font-family: helvetica, arial, sans-serif;
+      line-height: 16px;
+      max-height: 80px;
+      overflow: hidden;
+      font-size: 12px;
+    }
+
+    .head-line .head-caption {
+      display: flex;
+      padding-top: 5px;
+      position: relative;
+    }
+
+      .caption-text {
+        width: 80%;
+        padding-right: 8px;
+        padding-top: 13px;
+        font-size: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #9197a3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .caption-learn-more {
+        background-position: 0 -21px;
+        font-size: 12px;
+        line-height: 22px;
+        right: 0px;
+        position: absolute;
+      }
+      
+      .carousel-item {
+        width: 95%;
+      }
+
+      .carousel-wrapper {
+        display: flex;
+      }
+
+      .carousel-prev {
+        width: 280px;
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      .carousel-next {
+        width: 187px;
+        position: absolute;
+        left: 297px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      .mark {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .mark:hover {
+        background-color: #e9eaed;
+        opacity: .65;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+      }
+
+      .prev-button {
+        display: inline-flex;
+        position: relative;
+        background-color: #fff;
+        border: 1.5px solid #dfe0e4;
+        padding: 8px 9px;
+        border-radius: 2px;
+        margin-right: auto;
+      }
+
+      .prev-button > i {
+        background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/ZQMKI2-wve9.png);
+        background-size: 49px 81px;
+        background-position:0px -68px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+      }
+
+      .next-button {
+        display: inline-flex;
+        position: relative;
+        background-color: #fff;
+        border: 1.5px solid #dfe0e4;
+        padding: 8px 9px;
+        border-radius: 2px;
+        margin-left: auto;
+      }
+
+      .next-button > i {
+        background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/ZQMKI2-wve9.png);
+        background-size: 49px 81px;
+        background-position:-13px -68px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+      }

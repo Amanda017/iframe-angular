@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="left-side">
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="select-page" checked="checked" value="image" selected ng-click="pageChange('image')">
+                Image
+            </label><br/>
+            <label>
+                <input type="radio" name="select-page" value="video" ng-click="pageChange('video')">
+                Video
+            </label><br/>
+            <label>
+                <input type="radio" name="select-page" value="carousel" ng-click="pageChange('carousel')">
+                Carousel
+            </label><br/>
+        </div>
+
+        <div class="content">
+            PageTitle: <input type="text" ng-model="message" value="" ng-change="sendMessage()" maxlength="30" />
+        </div>
+    </div>
+    <div class="right-side">
+        <iframe class="iframe" name="{{frameName}}" ng-src="{{frameUrl}}" ng-onload="iframeLoaded(contentLocation)"></iframe>
+    </div>
+</div>
