@@ -1,6 +1,5 @@
 /* app css stylesheet */
 .a-m-r-8 {
-  margin-right: 8px;
   display: table-caption;
 }
 html {
@@ -93,20 +92,154 @@ body {
 
 .card-body {
   width: calc( 100% - 24px);
-  height: calc( 100% - 70px);
+  height: calc( 100% - 92px);
   padding: 12px 12px 0px;
   display: grid;
 }
 
 .carousel-card {
   width: calc(100% - 200px)!important;
-  height: calc( 100% - 60px)!important;
+      height: calc( 100% - 87px)!important;
 }
 
 .card-footer {
-  width: calc( 100% - 24px);
-  height: 59px;
+  margin-top: 10px;
+  color: #9197a3;
+  padding-bottom: 4px;
+  position: relative;
 }
+
+  .card-footer .top-line {
+    height: 20px;
+    padding: 0 12px 8px;
+    line-height: 20px;
+    clear: both;
+    line-height: 20px;
+    color: #90949c;
+    display: block;
+  }
+
+  .card-footer .top-line .left-line {
+    width: 254px;
+    float: left;
+    max-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #898f9c;
+    overflow: hidden;
+  }
+
+    .card-footer .top-line .left-line > span {
+      float: left;
+      margin-right: 2px;
+      white-space: nowrap;
+      width: 18px;
+      height: 20px;
+      display: flex;
+    }
+
+      .card-footer .top-line .left-line > span > a {
+        background: #fff;
+        border-radius: 10px;
+        line-height: 16px;
+        padding: 2px;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+        .card-footer .top-line .left-line > span > a > span:nth-child(1) {
+          height: 16px;
+          width: 16px;
+          vertical-align: top;
+          display: inline-block;
+          position: relative;
+          color: #9197a3;
+        }
+
+        .card-footer .top-line .left-line > span > a > span:nth-child(2) {
+          height: 14px;
+          font-size: 13px;
+        }
+
+          .card-footer .top-line .left-line > span > a > span > i {
+            height: 16px;
+            width: 16px;
+            transform: none;
+            background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/reactions_icons.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: -203px -34px;
+            display: block;
+            left: 50%;
+            margin-left: -50%;
+            margin-top: -50%;
+            position: absolute;
+            top: 50%;
+          }
+
+      .card-footer .top-line .left-line > span > a > span:nth-child(2) {
+        background: #fff;
+        margin-left: 10px;
+        min-width: 100px;
+        float: left;
+        cursor: pointer;
+      }
+
+  .card-footer .top-line .right-line {
+    background: #fff;
+    float: right;
+    max-width: 300px;
+    text-align: right;
+    font-size: 13px;
+  }
+
+  .card-footer .top-line .right-line > a:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .card-footer .bottom-line {
+    border-top: 1px solid #e5e5e5;
+    margin: 0 12px;
+    padding-top: 4px;
+    height: 27px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+  }
+
+    .card-footer .bottom-line > span {
+
+    }
+
+      .card-footer .bottom-line > span > a {
+        color: #7f7f7f;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        margin-right: 20px;
+        padding: 4px 4px 4px 0;
+      }
+
+      .card-footer .bottom-line > span > a::before {
+        content: '';
+        display: inline-block;
+        height: 14px;
+        margin: 0 6px -3px 0;
+        width: 14px;
+        background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/BydroxQzGTQ.png);
+        background-repeat: no-repeat;
+        background-size: 64px 210px;
+        background-position: -30px -129px;
+      }
+
+      .card-footer .bottom-line > span:nth-child(2) > a::before {
+        background-position: -15px -129px !important;
+      }
+
+      .card-footer .bottom-line > span:nth-child(3) > a::before {
+        background-position: 0 -145px !important;
+      }
 
   .card-body .header {
       display: flex;
@@ -122,18 +255,64 @@ body {
       margin-right: 8px;
     }
 
-    .page-like-button {
+    .title-bar {
+      height: 40px;
+      float: left;
+    }
+
+    .like-button {
+      right: 10px;
+      position: absolute;
+    }
+
+    .like-button > button {
       background-position: 0 -21px;
       font-size: 12px;
       line-height: 22px;
       right: 0px;
       position: absolute;
+      text-decoration: none;
+      border-color: #cccccc #c5c6c8 #b6b7b9;
+      color: #4e5665;
+      text-shadow: 0 1px 0 #fff;
+      padding: 0 8px;
+      background-color: #f6f7f8;
+      background-repeat: repeat-x;
+      border-radius: 2px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+      box-sizing: content-box;
+      font-family: helvetica, arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-weight: bold;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .like-button > button:before {
+      content: '';
+      display: inline-block;
+      height: 20px;
+      vertical-align: middle;
+    }
+
+    .like-button-icon {
+      width: 12px;
+      background-image: url(http://admocks.adparlor.com/assets/mockingbird/cached_images/facebook/G3f_wavBZgb.png);
+      background-size: 53px 261px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 13px;
+      bottom: 1px;
+      position: relative;
+      vertical-align: middle;
+      background-position: -37px -135px;
     }
 
     .first-title {
       height: 19px;
       font-size: 14px;
-      font-weight: normal;
+      font-weight: bold;
       line-height: 1.38;
       overflow: hidden;
       color: #3b5998;
@@ -149,6 +328,7 @@ body {
     }
 
     .message {
+      height: 25px;
       font-size: 14px;
       font-weight: normal;
       line-height: 1.38;
@@ -247,6 +427,39 @@ body {
       padding-top: 5px;
       position: relative;
     }
+
+      .head-line .head-caption > a {
+        background-position: 0 -21px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #4e5665;
+        padding: 0 8px;
+        border: 1px solid;
+        border-color: #cccccc #c5c6c8 #b6b7b9;
+        text-shadow: 0 1px 0 #fff;
+        background-color: #f6f7f8;
+        background-repeat: repeat-x;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        box-sizing: content-box;
+        font-family: helvetica, arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .head-line .head-caption > a:before {
+        content: '';
+        display: inline-block;
+        height: 20px;
+        vertical-align: middle;
+      }
 
       .caption-text {
         width: 80%;

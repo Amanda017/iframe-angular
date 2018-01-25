@@ -7,12 +7,17 @@
                 </div>
             </a>
             <div class="title-bar">
-                <div class="first-title">{{message}}</div>
+                <div class="first-title">
+                    <a>{{message}}</a>
+                </div>
                 <div class="sponsored">Sponsored</div>
             </div>
-            <button value="1" class="page-like-button" type="submit"> <i class="one"></i>
-                Like Page
-            </button>
+            <span class="like-button">
+                <button value="1" class="page-like-button" type="submit"> 
+                    <i class="like-button-icon"></i>
+                    Like Page
+                </button>
+            </span>
         </div>
         <div class="message">
             <p>Your Message Here</p>
@@ -26,10 +31,30 @@
                 <div class="head-description">Your Description Here</div>
                 <div class="head-caption">
                     <div class="caption-text">Your caption Here</div>
-                    <button value="2" class="caption-learn-more" type="submit">Learn More</button>
+                    <a>Learn More</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card-footer"></div>
+    <div class="card-footer">
+        <div class="top-line">
+            <div class="left-line">
+                <span aria-label="See who reacted to this" class="" role="toolbar" tabindex="0">
+                    <a data-hover="tooltip" class="_27jf _3emk" style="z-index:9;">
+                        <span><i></i></span>
+                        <span>20</span>
+                    </a>
+                </span>
+            </div>
+            <div class="right-line">
+                <a>562 Comments</a>
+                <a>311 Shares</a>
+            </div>
+        </div>
+        <div class="bottom-line">
+            <span><a>Like</a></span>
+            <span><a>Comment</a></span>
+            <span><a>Share</a></span>
+        </div>
+    </div>
 </div>
